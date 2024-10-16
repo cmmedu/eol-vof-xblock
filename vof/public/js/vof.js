@@ -211,7 +211,7 @@ function renderMathForSpecificElements(id) {
     if (typeof MathJax !== "undefined") {
         var $vof = $('#' + id);
         if ($vof.length) {
-            $vof.find('.dtcell1','dtcell2','dtcell3','dtcell4').each(function (index, vofelem) {
+            $vof.find('.dtcell1, .dtcell2, .dtcell3, .dtcell4').each(function (index, vofelem) {
                 //console.log("encontrado "+ vofelem )
                 MathJax.Hub.Queue(["Typeset", MathJax.Hub, vofelem]);
             });
